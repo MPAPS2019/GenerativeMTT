@@ -4,9 +4,7 @@ import ttach as tta
 import numpy as np
 
 from pytorch_grad_cam.grad_cam import BaseCAM
-from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
 from .activations_and_gradients import ActivationsAndGradients
-from .utils import SemeanticSegmentationTarget
 
 class BaseCAM_SemSeg(BaseCAM):
     def __init__(self,

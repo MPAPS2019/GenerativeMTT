@@ -1,6 +1,7 @@
+import torch
 import inplace_abn
 from torch import nn
-import torch
+
 
 abn_blocks = {
     0: inplace_abn.ABN,

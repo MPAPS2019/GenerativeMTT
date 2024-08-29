@@ -2,14 +2,13 @@ import logging
 import os
 import cv2
 import re
-import numpy as np
 import torch
+import numpy as np
+from typing import List, Any
 from pytorch_msssim import ssim
 from detectron2.projects.segmentation.evaluation.evaluator_base import BaseEvaluator
 from detectron2.projects.segmentation.data import ImageSample
-from typing import List, Any
 from detectron2.utils.events import get_event_storage
-
 
 class GnrtMTTEvaluator(BaseEvaluator):
     def __init__(self,

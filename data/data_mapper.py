@@ -1,22 +1,12 @@
 from __future__ import annotations
 
+import cv2
 import numpy as np
 import matplotlib.image as mpimg
 from typing import List
-import cv2
 from detectron2.utils import numpy_to_tensor
 from detectron2.projects.segmentation.data import ImageSample
 from detectron2.projects.segmentation.transforms import Transform, TransformList
-
-def histeq(img):
-    if len(img.shape) == 3:
-        (b, g, r) = cv2.split(img)
-        bH = cv2.equalizeHist(b)
-        gH = cv2.equalizeHist(g)
-        rH = cv2.equalizeHist(r)
-        return cv2.merge((bH, gH, rH))
-    else:
-        return cv2.equalizeHist(img)
 
 class GnrtMTTDataMapper:
     def __init__(self,

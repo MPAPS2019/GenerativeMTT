@@ -1,11 +1,11 @@
-import numpy as np
+import time
 import torch
-from scipy.ndimage import gaussian_filter
+from torch import nn
+import numpy as np
 from abc import ABC
+from scipy.ndimage import gaussian_filter
 from typing import Tuple, List, Literal, Generator
 from detectron2.projects.segmentation.data import ImageSample
-from torch import nn
-import time
 
 class BaseSplitCombiner(ABC):
     def __init__(

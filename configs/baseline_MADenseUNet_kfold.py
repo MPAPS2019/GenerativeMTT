@@ -76,7 +76,7 @@ STRIDE = [128, 128]
 SPLIT_COMBINE_ENABLE = True
 COMBINE_METHOD = 'gw'
 SIGMA = 0.25
-SAVE_CAMS = True
+SAVE_CAMS = False
 
 # optimizer parameters
 LEARNING_RATE = 0.01

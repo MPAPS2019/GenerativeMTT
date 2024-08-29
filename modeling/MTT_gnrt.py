@@ -1,17 +1,16 @@
-
-from typing import Optional, Tuple, List, Union
+import os
 import torch
 from torch import nn
 import torchvision.transforms.functional as F
 import matplotlib.pyplot as plt
-import os
 import numpy as np
-import time
-from ..CAM.grad_cam import GradCAM
-from ..CAM.utils import SemeanticSegmentationTarget
+from typing import Optional, Tuple, List, Union
 from detectron2.modeling.backbone import Backbone
 from detectron2.projects.segmentation.data import ImageSample
 from detectron2.utils.events import get_event_storage
+
+from ..CAM.grad_cam import GradCAM
+from ..CAM.utils import SemeanticSegmentationTarget
 
 class MTTGenerator(nn.Module):
     def __init__(self,
