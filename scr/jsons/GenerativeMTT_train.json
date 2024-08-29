@@ -11,10 +11,10 @@
     "data_list": [
         {
             "case_name": "S20_left",
-            "RGB_image_path": "GenerativeMTT/dataset/data/RGB_S20_left.bmp",
-            "LSI_MS_image_path": "GenerativeMTT/dataset/data/LSI_MS_S20_left.bmp",
-            "MTT_image_path": "GenerativeMTT/dataset/data/MTT_S20_left.bmp",
-            "vessel_mask_path": "GenerativeMTT/dataset/data/vessel_mask_S20_left.bmp"
+            "RGB_image_path": "GenerativeMTT/src/data/RGB_S20_left.bmp",
+            "LSI_MS_image_path": "GenerativeMTT/src/data/LSI_MS_S20_left.bmp",
+            "MTT_image_path": "GenerativeMTT/src/data/MTT_S20_left.bmp",
+            "vessel_mask_path": "GenerativeMTT/src/data/vessel_mask_S20_left.bmp"
         }
     ]
 }
