@@ -4,7 +4,7 @@
 Training script using the new "LazyConfig" python config files.
 
 This scripts reads a given python config file and runs the training or 1.
-It can be used to train any models or dataset as long as they can be
+It can be used to train any models or scr as long as they can be
 instantiated by the recursive construction defined in the given config file.
 
 Besides lazy construction of models, dataloader, etc., this scripts expects a
