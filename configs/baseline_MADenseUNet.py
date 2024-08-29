@@ -78,7 +78,6 @@ STRIDE = [128, 128]
 SPLIT_COMBINE_ENABLE = True
 COMBINE_METHOD = 'gw'
 SIGMA = 0.25
-SAVE_FEATURES = False
 SAVE_CAMS = True
 
 # optimizer parameters
@@ -149,7 +148,6 @@ dataloader.evaluator = [
     L(GnrtMTTEvaluator)(
         output_dir = output_dir,
         checkpoint = INIT_CHECKPOINT,
-        save_features = SAVE_FEATURES,
         save_cams = SAVE_CAMS
     )
 ]
@@ -179,7 +177,6 @@ model = L(MTTGenerator)(
         pixel_std = NORM_PRAMS[1],
         resize_size = RESIZE_SIZE,
         output_dir=output_dir,
-        save_features = SAVE_FEATURES,
         save_cams = SAVE_CAMS
 )
 

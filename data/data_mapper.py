@@ -18,9 +18,9 @@ class GnrtMTTDataMapper:
         RGB = (mpimg.imread(data['RGB_image_path'])/255).astype(np.float32)
         RGB = np.transpose(RGB, axes=(2,0,1))
         try:
-            LSI = (mpimg.imread(data['LSI_30_image_path'])[None]/255).astype(np.float32)
+            LSI = (mpimg.imread(data['LSI_image_path'])[None]/255).astype(np.float32)
         except:
-            LSI = (mpimg.imread(data['LSI_MS_30_image_path'])[None]/255).astype(np.float32)
+            LSI = (mpimg.imread(data['LSI_MS_image_path'])[None]/255).astype(np.float32)
 
         MTT = (mpimg.imread(data['MTT_image_path'])[None]/255).astype(np.float32)
         vmask = (mpimg.imread(data['vessel_mask_path'])[None] / 255)>0.5
@@ -38,7 +38,6 @@ class GnrtMTTDataMapper:
 
         if len(self.transforms)>0:
             self.transforms(sample)
-
 
         return ImageSample(
             img_name=sample.img_name,
