@@ -35,8 +35,8 @@ os.makedirs(output_dir, exist_ok=True)
 # ================================================================
 INIT_CHECKPOINT = ''
 
-ANNO_FILE_TRAIN = 'E:\Generative_MTT\data\jsons\GenerativeMTT_picked_LSI_30_train.json'
-ANNO_FILE_VALID = 'E:\Generative_MTT\data\jsons\GenerativeMTT_S13_LSI_MS_30_valid.json'
+ANNO_FILE_TRAIN = 'Generative_MTT\scr\jsons\GenerativeMTT_train.json'
+ANNO_FILE_VALID = 'Generative_MTT\scr\jsons\GenerativeMTT_valid.json'
 
 META, DATA_LIST = parse_json_annotation_file(ANNO_FILE_TRAIN)
 TRANSFORM_FIELD = {'image': 'image', 'label': 'segmentation'}
