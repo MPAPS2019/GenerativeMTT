@@ -38,7 +38,7 @@ In this repository, we have customized the required model, dataloaders, schedule
 - `evaluation/`: Contains the script for evalution model.
 - `CAM/`: Contains Grad-CAM utils.
 - `common/`: Contains scripts for loss function, optimizer, schedule and split-combine strategy in evaluation.
-- `scr/`: Contains example of data and json file, and figures. 
+- `scr/`: Contains examples of data with their json file, checkpoint, and figures. 
 
 ## Getting Started
 
